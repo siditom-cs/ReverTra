@@ -1,0 +1,22 @@
+{
+    "Description":"This is a pre-training configuration for codon optimization model based on BART language model.",
+    "project_name": "ReverTra_SCPECBS3",
+    "dataset_path": "./data/datasets/processed_data_SCPECBS3/homologs/SCPECBS3_SCPECBS3_ExprRefined",
+    "tokenizer_path": "./tokenizers/contra_tokenizer_gen_exprrefined",
+    "cai_refference_path":"./data/datasets/processed_data_SCPECBS3/S_cerevisiae/S_cerevisiae.0.nt.fasta",
+    "checkpoint_flag": true,
+    "checkpoint_path": "./models/Finetuned_oSiS_75_ExR/best_model/",
+    "special_token_th":42,
+    "mask_all": true,
+    "sw_aa_size":75,
+    "eval_type":"model",
+    "model_type":"COBaBExRi",
+    "cai_query_species":"S_cerevisiae",
+    "outdir":"./models/Finetuned_oSiS_75_ExR/best_model/",
+    "outfile":"mask_model_eval.csv",
+    "out_dict": ["prot_len","num_of_correct_predicted_codons",
+        "accuracy","cross_entropy_loss","entropy","query_codons",
+        "subject_codons","pred_codons"],
+    "orig_dict": ["qseqid", "sseqid", "query_species", "subject_species", "pident", "length", "mismatch", "gapopen", "qstart", "qend", "sstart", "send", "evalue", "bitscore"],
+    "debug":false 
+}

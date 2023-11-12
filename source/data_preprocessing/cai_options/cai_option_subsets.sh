@@ -1,0 +1,18 @@
+#!/bin/sh
+
+s="S_cerevisiae"
+python cai_subset.py --expr_th_perc=0.05 --species="$s" --expr_path="/home/tomer/COnTRA/data/raw_data/SCPECBS/expr/$s.csv" 
+python cai_subset.py --expr_th_perc=0.1 --species="$s" --expr_path="/home/tomer/COnTRA/data/raw_data/SCPECBS/expr/$s.csv" 
+python cai_subset.py --expr_th_perc=0.15 --species="$s" --expr_path="/home/tomer/COnTRA/data/raw_data/SCPECBS/expr/$s.csv" 
+s="S_pombe"
+python cai_subset.py --expr_th_perc=0.05 --species="$s" --expr_path="/home/tomer/COnTRA/data/raw_data/SCPECBS/expr/$s.csv" 
+python cai_subset.py --expr_th_perc=0.1 --species="$s" --expr_path="/home/tomer/COnTRA/data/raw_data/SCPECBS/expr/$s.csv" 
+python cai_subset.py --expr_th_perc=0.15 --species="$s" --expr_path="/home/tomer/COnTRA/data/raw_data/SCPECBS/expr/$s.csv" 
+s="E_coli"
+python cai_subset.py --expr_th_perc=0.05 --species="$s" --expr_path="/home/tomer/COnTRA/data/raw_data/SCPECBS/expr/$s.csv" 
+python cai_subset.py --expr_th_perc=0.1 --species="$s" --expr_path="/home/tomer/COnTRA/data/raw_data/SCPECBS/expr/$s.csv" 
+python cai_subset.py --expr_th_perc=0.15 --species="$s" --expr_path="/home/tomer/COnTRA/data/raw_data/SCPECBS/expr/$s.csv" 
+s="B_subtilis"
+python cai_subset.py --expr_th_perc=0.05 --species="$s" --expr_path="/home/tomer/COnTRA/data/raw_data/SCPECBS/expr/$s.csv" 
+python cai_subset.py --expr_th_perc=0.1 --species="$s" --expr_path="/home/tomer/COnTRA/data/raw_data/SCPECBS/expr/$s.csv" 
+python cai_subset.py --expr_th_perc=0.15 --species="$s" --expr_path="/home/tomer/COnTRA/data/raw_data/SCPECBS/expr/$s.csv" 

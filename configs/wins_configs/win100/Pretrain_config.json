@@ -1,0 +1,34 @@
+{
+    "Description":"This is a pre-training configuration for codon optimization model based on BART language model.",
+    "project_name": "SCPECBS3",
+    "dataset_path": "./data/datasets/processed_data_SCPECBS3/homologs/SCPECBS3_SCPECBS3_ExprRefined100",
+    "model_outpath": "./models",
+    "model_name": "Pretrain100_ReverTra_ExR",
+    "tokenizer_path": "./tokenizers/contra_tokenizer_gen_exprrefined",
+    "cai_refference_path":"./data/datasets/processed_data_SCPECBS3/S_cerevisiae/S_cerevisiae.0.nt.fasta",
+    "checkpoint_flag": false,
+    "checkpoint_path": "",
+    "finetune_flag": false,
+    "dataset_single_species_flag": false,
+    "special_token_th":42,
+    "sw_aa_size":100,
+    "model_config": {
+	"vocab_size":108,
+	"max_position_embeddings":512,
+        "d_model": 256,
+        "attention_layers": 6,
+        "attention_heads": 8,
+        "ffn_dim": 256
+    },
+    "train_config": {
+        "starting_lr": 0.0001,
+        "mask_perc": 0.3,
+        "batch_size": 32,
+        "warmup_steps": 15000,
+        "steps": 200000,
+        "label_smoothing_factor": 0.15,
+        "logging_steps": 500,
+        "decoder_noise": 0.0,
+	"seed":42
+    }
+}

@@ -1,0 +1,1037 @@
+{
+  "version": "1.0",
+  "truncation": null,
+  "padding": null,
+  "added_tokens": [
+    {
+      "id": 0,
+      "special": true,
+      "content": "<pad>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 1,
+      "special": true,
+      "content": "<gap>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 2,
+      "special": true,
+      "content": "<s>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 3,
+      "special": true,
+      "content": "</s>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 4,
+      "special": true,
+      "content": "<unk>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 5,
+      "special": true,
+      "content": "<cls>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 6,
+      "special": true,
+      "content": "<sep>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 7,
+      "special": true,
+      "content": "<expr_top10>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 8,
+      "special": true,
+      "content": "<expr_pre75_90>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 9,
+      "special": true,
+      "content": "<expr_pre50_75>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 10,
+      "special": true,
+      "content": "<expr_pre25_50>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 11,
+      "special": true,
+      "content": "<expr_low25>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 12,
+      "special": true,
+      "content": "<expr_unk>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 13,
+      "special": true,
+      "content": "<seqpos_begin>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 14,
+      "special": true,
+      "content": "<seqpos_end>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 15,
+      "special": true,
+      "content": "<seqpos_mid>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 16,
+      "special": true,
+      "content": "<sim_high>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 17,
+      "special": true,
+      "content": "<sim_low>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 18,
+      "special": true,
+      "content": "<S_cerevisiae>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 19,
+      "special": true,
+      "content": "<S_pombe>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 20,
+      "special": true,
+      "content": "<E_coli>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 21,
+      "special": true,
+      "content": "<B_subtilis>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 22,
+      "special": true,
+      "content": "<mask_*>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 23,
+      "special": true,
+      "content": "<mask_S>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 24,
+      "special": true,
+      "content": "<mask_W>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 25,
+      "special": true,
+      "content": "<mask_D>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 26,
+      "special": true,
+      "content": "<mask_N>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 27,
+      "special": true,
+      "content": "<mask_V>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 28,
+      "special": true,
+      "content": "<mask_H>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 29,
+      "special": true,
+      "content": "<mask_A>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 30,
+      "special": true,
+      "content": "<mask_K>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 31,
+      "special": true,
+      "content": "<mask_G>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 32,
+      "special": true,
+      "content": "<mask_Q>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 33,
+      "special": true,
+      "content": "<mask_F>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 34,
+      "special": true,
+      "content": "<mask_I>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 35,
+      "special": true,
+      "content": "<mask_T>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 36,
+      "special": true,
+      "content": "<mask_C>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 37,
+      "special": true,
+      "content": "<mask_L>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 38,
+      "special": true,
+      "content": "<mask_P>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 39,
+      "special": true,
+      "content": "<mask_E>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 40,
+      "special": true,
+      "content": "<mask_M>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 41,
+      "special": true,
+      "content": "<mask_Y>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 42,
+      "special": true,
+      "content": "<mask_R>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 43,
+      "special": false,
+      "content": "TTT",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 44,
+      "special": false,
+      "content": "TTC",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 45,
+      "special": false,
+      "content": "TTA",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 46,
+      "special": false,
+      "content": "TTG",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 47,
+      "special": false,
+      "content": "TCT",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 48,
+      "special": false,
+      "content": "TCC",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 49,
+      "special": false,
+      "content": "TCA",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 50,
+      "special": false,
+      "content": "TCG",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 51,
+      "special": false,
+      "content": "TAT",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 52,
+      "special": false,
+      "content": "TAC",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 53,
+      "special": false,
+      "content": "TAA",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 54,
+      "special": false,
+      "content": "TAG",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 55,
+      "special": false,
+      "content": "TGT",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 56,
+      "special": false,
+      "content": "TGC",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 57,
+      "special": false,
+      "content": "TGA",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 58,
+      "special": false,
+      "content": "TGG",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 59,
+      "special": false,
+      "content": "CTT",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 60,
+      "special": false,
+      "content": "CTC",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 61,
+      "special": false,
+      "content": "CTA",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 62,
+      "special": false,
+      "content": "CTG",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 63,
+      "special": false,
+      "content": "CCT",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 64,
+      "special": false,
+      "content": "CCC",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 65,
+      "special": false,
+      "content": "CCA",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 66,
+      "special": false,
+      "content": "CCG",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 67,
+      "special": false,
+      "content": "CAT",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 68,
+      "special": false,
+      "content": "CAC",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 69,
+      "special": false,
+      "content": "CAA",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 70,
+      "special": false,
+      "content": "CAG",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 71,
+      "special": false,
+      "content": "CGT",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 72,
+      "special": false,
+      "content": "CGC",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 73,
+      "special": false,
+      "content": "CGA",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 74,
+      "special": false,
+      "content": "CGG",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 75,
+      "special": false,
+      "content": "ATT",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 76,
+      "special": false,
+      "content": "ATC",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 77,
+      "special": false,
+      "content": "ATA",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 78,
+      "special": false,
+      "content": "ATG",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 79,
+      "special": false,
+      "content": "ACT",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 80,
+      "special": false,
+      "content": "ACC",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 81,
+      "special": false,
+      "content": "ACA",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 82,
+      "special": false,
+      "content": "ACG",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 83,
+      "special": false,
+      "content": "AAT",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 84,
+      "special": false,
+      "content": "AAC",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 85,
+      "special": false,
+      "content": "AAA",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 86,
+      "special": false,
+      "content": "AAG",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 87,
+      "special": false,
+      "content": "AGT",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 88,
+      "special": false,
+      "content": "AGC",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 89,
+      "special": false,
+      "content": "AGA",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 90,
+      "special": false,
+      "content": "AGG",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 91,
+      "special": false,
+      "content": "GTT",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 92,
+      "special": false,
+      "content": "GTC",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 93,
+      "special": false,
+      "content": "GTA",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 94,
+      "special": false,
+      "content": "GTG",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 95,
+      "special": false,
+      "content": "GCT",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 96,
+      "special": false,
+      "content": "GCC",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 97,
+      "special": false,
+      "content": "GCA",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 98,
+      "special": false,
+      "content": "GCG",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 99,
+      "special": false,
+      "content": "GAT",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 100,
+      "special": false,
+      "content": "GAC",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 101,
+      "special": false,
+      "content": "GAA",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 102,
+      "special": false,
+      "content": "GAG",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 103,
+      "special": false,
+      "content": "GGT",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 104,
+      "special": false,
+      "content": "GGC",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 105,
+      "special": false,
+      "content": "GGA",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    },
+    {
+      "id": 106,
+      "special": false,
+      "content": "GGG",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": true
+    }
+  ],
+  "normalizer": null,
+  "pre_tokenizer": {
+    "type": "Whitespace"
+  },
+  "post_processor": {
+    "type": "TemplateProcessing",
+    "single": [
+      {
+        "SpecialToken": {
+          "id": "<cls>",
+          "type_id": 0
+        }
+      },
+      {
+        "Sequence": {
+          "id": "A",
+          "type_id": 0
+        }
+      },
+      {
+        "SpecialToken": {
+          "id": "<sep>",
+          "type_id": 0
+        }
+      }
+    ],
+    "pair": [
+      {
+        "Sequence": {
+          "id": "A",
+          "type_id": 0
+        }
+      },
+      {
+        "Sequence": {
+          "id": "B",
+          "type_id": 0
+        }
+      }
+    ],
+    "special_tokens": {
+      "<cls>": {
+        "id": "<cls>",
+        "ids": [
+          5
+        ],
+        "tokens": [
+          "<cls>"
+        ]
+      },
+      "<sep>": {
+        "id": "<sep>",
+        "ids": [
+          6
+        ],
+        "tokens": [
+          "<sep>"
+        ]
+      }
+    }
+  },
+  "decoder": null,
+  "model": {
+    "type": "WordLevel",
+    "vocab": {},
+    "unk_token": "<unk>"
+  }
+}

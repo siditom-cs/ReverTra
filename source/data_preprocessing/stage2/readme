@@ -1,0 +1,2 @@
+1. run blast all-against-all for each set (training, validation, test)
+2. prepare validation dataset (fixed win size with no overlap)

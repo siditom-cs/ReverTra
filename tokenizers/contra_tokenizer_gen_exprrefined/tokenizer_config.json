@@ -1,0 +1,12 @@
+{
+  "bos_token": "<s>",
+  "cls_token": "<cls>",
+  "eos_token": "</s>",
+  "mask_token": "<msk>",
+  "model_max_length": 512,
+  "pad_token": "<pad>",
+  "padding_side": "right",
+  "sep_token": "<sep>",
+  "tokenizer_class": "PreTrainedTokenizerFast",
+  "unk_token": "<unk>"
+}

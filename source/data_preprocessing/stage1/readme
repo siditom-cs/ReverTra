@@ -1,0 +1,11 @@
+#DATA Preproceesing
+1. Download orfs
+   file: download_orfs.sh
+
+2. Standartize orfs names
+   file: 
+
+3. Partition the sequences (based on cd-hit clusters)
+   preprocess_dbs.sh
+
+

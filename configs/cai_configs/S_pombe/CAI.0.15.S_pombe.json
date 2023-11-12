@@ -1,0 +1,17 @@
+{
+    "Description":"This is a evaluation configuration for CAI baseline model.",
+    "project_name": "COnTRA",
+    "dataset_path": "/home/tomer/COnTRA/data/datasets/processed_data_SCPECBS3/homologs/SCPECBS3_SCPECBS3",
+    "tokenizer_path": "/home/tomer/COnTRA/tokenizers/mbart_translation_SCPECBS2_codon_tokenizer",
+    "cai_refference_path":"/home/tomer/COnTRA/data/datasets/processed_data_SCPECBS3/S_pombe/S_pombe.subset.e0.15.0.nt.fasta",
+    "cai_query_species":"S_pombe",
+    "checkpoint_flag": false,
+    "checkpoint_path": "",
+    "special_token_th":31,
+    "sw_aa_size":75,
+    "eval_type":"cai",
+    "outdir":"./CAI_Evals",
+    "out_dict": ["prot_len","num_of_correct_predicted_codons","accuracy","cross_entropy_loss","entropy","query_codons","subject_codons","pred_codons"],
+    "orig_dict": ["qseqid", "sseqid", "query_species", "subject_species", "pident", "length", "mismatch", "gapopen", "qstart", "qend", "sstart", "send", "evalue", "bitscore"],
+    "debug":false 
+}
