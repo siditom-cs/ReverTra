@@ -1,0 +1,3 @@
+This folder contains Jupyter notebooks for this project:
+1. Inference of trained models (Mimic and Mask) for a given sequence - including the ability to calculate statistics given the true codon sequence.
+2. Dataset download for the full datasets partitions and features used to train the models of this project.
