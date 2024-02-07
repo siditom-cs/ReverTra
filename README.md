@@ -25,4 +25,16 @@ Here you can find the code, raw data, and additional information needed to repro
 
 ### Model training and evaluation:
 
-For training the model, use the script _train_model.sh_, which includes three consecutive training runs (pre-training, finetuning, and second finetuning) and depicted in the paper. The configuration files for each run is in the configs folder. The default training window is 75, for a different one - edit the script.
+For training the model, use the script _train_model.sh_.  <br>
+The script includes three consecutive training runs (pre-training, finetuning, and second finetuning) and depicted in the paper. The configuration files for each run is in the configs folder. The default training window is 75, for a different one - edit the script.
+<br><br>
+For model evaluation, use the script _eval_model.sh_. <br>
+The evaluation options are configured using the config files:
+- ***eval_mimic.json*** : for models with two finetuning runs (mimic).
+- ***eval_sis.json*** : for models with a single finetuning run (mask).
+- ***eval2_mask.json***: for models with two finetuning runs, yet with mask inference.
+
+Evaluation of the frequency model: ***eval_cais.sh***
+
+
+
